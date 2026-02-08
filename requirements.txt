@@ -1,0 +1,7 @@
+langchain_community
+crewai
+dotenv
+numpy
+crewai-tools
+crewai[tools]
+litellm
