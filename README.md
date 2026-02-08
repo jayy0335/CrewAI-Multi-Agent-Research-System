@@ -53,12 +53,6 @@ GROK_KEY=your_groq_key_here
 python main.py
 ```
 
-### 4. Verify Structure (Optional)
-
-```bash
-python verify_structure.py
-```
-
 ## 📝 Features
 
 - **Modular Architecture**: Separate packages for agents, tasks, and configuration
