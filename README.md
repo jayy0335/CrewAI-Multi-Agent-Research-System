@@ -49,12 +49,24 @@ GROK_KEY=your_groq_key_here
 
 ### 3. Run the Application
 
+**Option A: Web Interface (Recommended)**
+
+```bash
+python app.py
+```
+
+Then open your browser and navigate to: **http://localhost:5000**
+
+**Option B: Command Line Interface**
+
 ```bash
 python main.py
 ```
 
 ## 📝 Features
 
+- **Modern Web Interface**: Interactive web UI for submitting topics and viewing real-time progress
+- **Real-Time Updates**: Server-Sent Events (SSE) for live agent activity tracking
 - **Modular Architecture**: Separate packages for agents, tasks, and configuration
 - **Three Specialized Agents**:
   - **Senior Researcher**: Strategic research and task delegation

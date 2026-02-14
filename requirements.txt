@@ -1,7 +1,9 @@
 langchain_community
 crewai
-dotenv
+python-dotenv
 numpy
 crewai-tools
 crewai[tools]
 litellm
+flask
+litellm[proxy]  

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrewAI Multi-Agent Research System</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="bg-gradient"></div>
+    <div class="bg-pattern"></div>
+    
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🤖</div>
+                    <div class="logo-text">
+                        <h1>CrewAI Research System</h1>
+                        <p>Multi-Agent AI Research Platform</p>
+                    </div>
+                </div>
+                <div class="agent-badges">
+                    <span class="badge">🔍 Researcher</span>
+                    <span class="badge">✍️ Writer</span>
+                    <span class="badge">🎨 Content Creator</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Input Section -->
+            <section class="input-section">
+                <div class="card glass">
+                    <h2>🚀 Start Your Research</h2>
+                    <p class="subtitle">Enter a topic and let our AI agents conduct comprehensive research</p>
+                    
+                    <form id="research-form">
+                        <div class="form-group">
+                            <label for="topic">Research Topic</label>
+                            <input 
+                                type="text" 
+                                id="topic" 
+                                name="topic" 
+                                placeholder="e.g., latest trends in artificial intelligence"
+                                required
+                                autocomplete="off"
+                            >
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submit-btn">
+                            <span class="btn-text">Start Research</span>
+                            <span class="btn-icon">→</span>
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Progress Section -->
+            <section class="progress-section" id="progress-section" style="display: none;">
+                <div class="card glass">
+                    <h2>📊 Research Progress</h2>
+                    
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" id="progress-bar"></div>
+                    </div>
+                    
+                    <div class="status-container" id="status-container">
+                        <div class="status-item">
+                            <span class="status-icon">⏳</span>
+                            <span class="status-text" id="status-text">Initializing...</span>
+                        </div>
+                    </div>
+
+                    <div class="agent-activity" id="agent-activity">
+                        <!-- Agent activities will be dynamically added here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section" id="results-section" style="display: none;">
+                <div class="card glass">
+                    <div class="results-header">
+                        <h2>✨ Research Results</h2>
+                        <button class="btn btn-secondary" id="new-research-btn">New Research</button>
+                    </div>
+                    
+                    <div class="results-content" id="results-content">
+                        <!-- Results will be displayed here -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Powered by CrewAI Framework | Multi-Agent AI Orchestration</p>
+        </footer>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
